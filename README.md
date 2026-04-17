@@ -1,3 +1,10 @@
+
+
+
+Live link - https://tiptop-notes.netlify.app/
+
+
+
 # TipTop Notes — Refactored
 
 A Google-Keep-style notes app rebuilt with **Tailwind CSS**, **Zustand**, and **Heroicons**, split into small focused components.
