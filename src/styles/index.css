@@ -27,6 +27,7 @@
   .notes-masonry {
     columns: 3 260px;
     column-gap: 14px;
+    
   }
   .notes-masonry > * {
     break-inside: avoid;
