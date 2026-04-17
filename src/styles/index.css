@@ -1,0 +1,61 @@
+/* ─── Tailwind base layers ─────────────────────────────────────── */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Google Fonts import ──────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap');
+
+/* ─── Base reset / body ────────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply font-nunito bg-surface-muted text-gray-800 min-h-screen;
+  }
+}
+
+/* ─── Custom scrollbar ─────────────────────────────────────────── */
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar          { width: 6px; }
+  .scrollbar-thin::-webkit-scrollbar-track    { background: transparent; }
+  .scrollbar-thin::-webkit-scrollbar-thumb    { @apply bg-surface-border rounded-full; }
+
+  /* Masonry / column-based grid utilities */
+  .notes-masonry {
+    columns: 3 260px;
+    column-gap: 14px;
+  }
+  .notes-masonry > * {
+    break-inside: avoid;
+    margin-bottom: 14px;
+  }
+  .notes-list {
+    columns: 1;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ─── Composer textarea auto-grow ──────────────────────────────── */
+@layer components {
+  .composer-textarea {
+    @apply w-full bg-transparent border-none outline-none resize-none
+           font-nunito text-sm font-medium text-gray-600 leading-relaxed;
+    min-height: 80px;
+  }
+
+  /* Note body line-clamp */
+  .note-body-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+svg{
+  width:100px;
+}
