@@ -91,7 +91,7 @@ export default function NoteCard({ note }) {
     
       <div
         className="
-          absolute bottom-2.5 right-2.5 flex gap-0.5
+          absolute bottom-2.5 left-1 flex gap-0.5
           opacity-0 group-hover:opacity-100 transition-opacity duration-150
         "
         onClick={e => e.stopPropagation()}
