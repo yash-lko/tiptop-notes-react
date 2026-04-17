@@ -6,9 +6,9 @@ Live link - https://tiptop-notes.netlify.app/
 <img width="1426" height="671" alt="image" src="https://github.com/user-attachments/assets/bc02cf59-2a6d-45d4-96dc-bd788f882a49" />
 
 
-# TipTop Notes — Refactored
+# TipTop Notes
 
-A Google-Keep-style notes app rebuilt with **Tailwind CSS**, **Zustand**, and **Heroicons**, split into small focused components.
+A Google-Keep-style notes app built with **Tailwind CSS**, **Zustand**, and **Heroicons**, split into small focused components.
 
 ---
 
